@@ -1,0 +1,286 @@
+body {
+    font-family: 'Merriweather',
+        serif;
+    background: #fff;
+    color: #242325;
+}
+
+/* Global styles */
+
+.text-green {
+    color: #61e786
+}
+
+.green__btn {
+    color: #61e786;
+    border: 0.1rem solid #61e786
+}
+
+.green__btn:hover {
+    background: #61e786;
+    color: #fff;
+}
+
+.title-underline {
+    width: 10rem;
+    height: 0.3rem;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 2rem;
+}
+
+.title-underline__center {
+    position: absolute;
+    height: 0.5rem;
+    background: #61e786;
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+
+}
+
+.blockquote {
+    border-left: 0.5rem solid #61e786;
+}
+
+/* Navbar */
+.navbar {
+    background: #242325 !important;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    text-decoration-line: underline;
+    transform: scale(1.1);
+}
+
+.phone-icon {
+    color: #61e786;
+    border: 0.1rem solid #61e786;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+/* End of navbar styles */
+
+/* Banner styles */
+
+.banner-info {
+    min-height: calc(100vh - 101px);
+    background: #ececec;
+    position: relative;
+}
+
+.banner-info__footer {
+    background: #61e786;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.banner-img {
+    min-height: calc(100vh - 101px);
+    background: url(/images/bannerBcg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.banner-img__footer {
+    background: #242325;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 104px;
+    display: flex;
+    align-items: center;
+}
+
+/* End of banner styles */
+
+/* About styles */
+
+.img-container {
+    position: relative;
+}
+
+.featured-icons {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.featured-icon-left {
+    background: #242325;
+    padding: 0.5rem;
+    display: inline-block;
+    color: #fff;
+}
+
+.featured-icon-right {
+    background: #61e786;
+    padding: 0.5rem;
+    display: inline-block;
+    color: #fff;
+}
+
+.featured {
+    background: #ececec;
+}
+
+/* Newsletter */
+
+.contact {
+    background: #61e786;
+    color: #fff;
+}
+
+.contact-btn {
+    background: transparent;
+    border: 0.1rem solid #fff;
+    color: #fff;
+}
+
+.contact-btn:hover {
+    background: #fff;
+    color: #61e786;
+}
+
+/* Services styles */
+
+.services,
+.tour {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/bannerBcg.jpeg)center/cover no-repeat fixed;
+}
+
+.services-info-text {
+    color: #fff !important;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #61e786;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.services-info-text:hover {
+    color: #000 !important;
+    text-decoration: none;
+}
+
+#services-image {
+    border-radius: 10%;
+}
+
+.service-icon {
+    color: #61e786;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border: 0.1rem solid #61e786;
+    margin-right: 1rem;
+    align-self: center;
+    transition: all 1s ease-in-out;
+}
+
+.service-icon:hover {
+    background: #61e786;
+    color: #ececec;
+}
+
+.service-link:hover {
+    color: #fff;
+}
+
+/* Renters gallery */
+
+.gallery-btn:hover {
+    background: #61e786;
+    color: #fff;
+}
+
+.gallery-img-container {
+    position: relative;
+    transition: all 1s linear;
+    overflow: hidden;
+}
+
+.gallery-img-container:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.gallery-img-container:hover .gallery-img {
+    opacity: 0.3;
+}
+
+.gallery-img {
+    transition: all 1s linear;
+}
+
+.gallery-info {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    background: #61e786;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.gallery-info:hover {
+    text-decoration: none;
+    color: #242325;
+}
+
+.gallery-img-container:hover .gallery-info {
+    transform: translate(-50%, 0);
+
+}
+
+.gallery-img-container:hover .gallery-icon {
+    opacity: 1;
+}
+
+.gallery-icon {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+/* Tour Section */
+
+.tour-icon {
+    color: #61e786;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: #fff;
+    border-radius: 30%;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 1s linear;
+}
+
+.tour-icon:hover {
+    background: #61e786;
+    color: #fff;
+}
+
+.footer {
+    background: #242325;
+}
